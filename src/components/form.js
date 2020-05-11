@@ -26,7 +26,7 @@ const Form = () => (
             <input className="field" name="outboundMonthlyVolume" placeholder="Monthly Volume" type="text" /><br/>
             <input className="field" name="outboundCurrencies" placeholder="Business Type" type="text" /><br/>
             <textarea className="field" name="anyFurtherInfo" placeholder="Any Additional Information"/><br/>
-            <Link to="application-received"><button type="submit">Submit</button></Link>
+            <Link style={{textDecoration: "none", color: "white"}} to="application-received"><button type="submit">Submit</button></Link>
         </form>
     </>
 )
