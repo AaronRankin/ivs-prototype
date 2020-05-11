@@ -8,6 +8,9 @@ import Footer from "../components/footer"
 
 const ApplicationSubmitted = (props) => (
     <>
+        <Helmet>
+            <title>Thank You | IVS Group</title>
+        </Helmet>
         <div className="apply-logo">
             <Link to="/"><Img style={{
                 width: "20%"

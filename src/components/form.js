@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 const Form = () => (
     <>
         <form name="new-client" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/application-received">
+            <input type="hidden" name="bot-field" />
             <input className="field" name="firstName" placeholder="First Name" type="text" /><br/>
             <input className="field" name="lastName" placeholder="Last Name" type="text" /><br/>
             <input className="field" name="email" placeholder="Your Email" type="email" /><br/>

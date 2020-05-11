@@ -1,6 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 import { Link, graphql } from "gatsby"
+import Helmet from "react-helmet"
 
 import "../styles/apply.css"
 import Footer from "../components/footer"
@@ -8,6 +9,9 @@ import Form from "../components/form"
 
 const Apply = (props) => (
     <>
+        <Helmet>
+            <title>IVS Group | The Future of Business Banking</title>
+        </Helmet>
         <div className="apply-logo">
             <Link to="/"><Img style={{
                 width: "20%"
