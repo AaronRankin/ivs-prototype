@@ -2,6 +2,7 @@ import React from "react"
 import Img from "gatsby-image"
 import { Link, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
+import Helmet from "react-helmet"
 
 import "../styles/application-received.css"
 import Footer from "../components/footer"
