@@ -6,6 +6,7 @@
 form{
     margin: 0;
     
+    
 }
 
 form a {
@@ -21,11 +22,6 @@ input {
 
 }
 
-input [type=checkbox] {
-    width: 40px;
-    height: 20px;
-}
-
 .apply-logo {
     padding: 20px;
 }
@@ -33,6 +29,7 @@ input [type=checkbox] {
 .form-wrapper {
     width: 100%;
     background-color: #F8F8F8;
+    
 }
 
 .contact-form {
@@ -104,8 +101,9 @@ input[type="checkbox"] {
     transition: all 0.25s;
     vertical-align: middle;
     width: 1.25rem;
-  }
-  input[type="checkbox"]::after {
+}
+
+input[type="checkbox"]::after {
     background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2264px%22%20height%3D%2264px%22%20viewBox%3D%220%200%2064%2064%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cpolygon%20id%3D%22Combined-Shape%22%20fill%3D%22white%22%20points%3D%2223%2056%2021%2054%200%2033%207%2026%2023%2042%2057%208%2064%2015%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E");
     background-position: center center;
     background-repeat: no-repeat;
@@ -119,30 +117,35 @@ input[type="checkbox"] {
     -webkit-transition: opacity 0.25s;
     transition: opacity 0.25s;
     width: 1rem;
-  }
-  input[type="checkbox"]:hover {
+}
+
+input[type="checkbox"]:hover {
     background-color: #bfdde1;
     border: 0.125rem steelblue solid;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
-  }
-  input[type="checkbox"]:focus {
+}
+
+input[type="checkbox"]:focus {
     outline: none;
     box-shadow: 0px 0px 8px black;
-  }
-  input[type="checkbox"]:checked {
+}
+
+input[type="checkbox"]:checked {
     background-color: steelblue;
     border: 0.125rem steelblue solid;
-  }
-  input[type="checkbox"]:checked::after {
-    opacity: 1;
-  }
+}
+
+input[type="checkbox"]:checked::after {
+    pacity: 1;
+}
+
 
 @media screen and (max-width: 450px) {
     .contact-form{
         padding-left: 0;
         padding-right: 0;
-        height: 100vh;
+        
     }
 
     input {
