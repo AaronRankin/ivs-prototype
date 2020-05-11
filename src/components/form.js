@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 const Form = () => (
     <>
-        <form name="new-client" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+        <form name="new-client" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/application-received">
             <input className="field" name="firstName" placeholder="First Name" type="text" /><br/>
             <input className="field" name="lastName" placeholder="Last Name" type="text" /><br/>
             <input className="field" name="email" placeholder="Your Email" type="email" /><br/>
@@ -28,7 +28,7 @@ const Form = () => (
             <input className="field" name="outboundCurrencies" placeholder="Business Type" type="text" /><br/>
             <textarea className="field" name="anyFurtherInfo" placeholder="Any Additional Information"/><br/>
             <div data-netlify-recaptcha="true"></div>
-            <Link style={{textDecoration: "none", color: "white"}} to="application-received"><button type="submit" formMethod="POST">Submit</button></Link>
+            <button type="submit" formMethod="POST">Submit</button>
         </form>
     </>
 )
