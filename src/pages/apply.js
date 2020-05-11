@@ -3,7 +3,6 @@ import Img from "gatsby-image"
 import { Link, graphql } from "gatsby"
 
 import "../styles/apply.css"
-import "../fonts/fonts.css"
 import Footer from "../components/footer"
 import Form from "../components/form"
 

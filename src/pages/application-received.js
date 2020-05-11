@@ -4,7 +4,6 @@ import { Link, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 
 import "../styles/application-received.css"
-import "../fonts/fonts.css"
 import Footer from "../components/footer"
 
 const ApplicationSubmitted = (props) => (
