@@ -28,7 +28,7 @@ const Form = () => (
             <input className="field" name="outboundCurrencies" placeholder="Business Type" type="text" /><br/>
             <textarea className="field" name="anyFurtherInfo" placeholder="Any Additional Information"/><br/>
             <div data-netlify-recaptcha="true"></div>
-            <button type="submit" formMethod="POST">Submit</button>
+            <button type="submit">Submit</button>
         </form>
     </>
 )
