@@ -15,7 +15,8 @@ const Apply = (props) => (
         </div>
         <div className="form-wrapper">
             <div className="contact-form">
-                <form name="new-client" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                <form name="new-client" method="POST" data-netlify="true"
+                data-netlify-honeypot="bot-field">
                     <input className="field" name="firstName" placeholder="First Name" type="text" /><br/>
                     <input className="field" name="lastName" placeholder="Last Name" type="text" /><br/>
                     <input className="field" name="email" placeholder="Your Email" type="text" /><br/>
