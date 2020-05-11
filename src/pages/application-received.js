@@ -1,6 +1,6 @@
 import React from "react"
 import Img from "gatsby-image"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 
 import "../styles/application-received.css"
@@ -15,7 +15,7 @@ const ApplicationSubmitted = (props) => (
                 fluid={props.data.logo.childImageSharp.fluid} /></Link>
         </div>
         <BackgroundImage style={{height: "100vh"}} fluid={props.data.forest.childImageSharp.fluid}>
-            <div className="form-wrapper">
+            <div className="wrapper">
                 <div className="thank-you">
                 
                     <h1>Thank you for getting in touch.</h1>
