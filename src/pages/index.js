@@ -5,6 +5,8 @@ import { Helmet } from "react-helmet"
 
 import Layout from "../components/layout"
 
+import "../fonts/fonts.css"
+
 
 const IndexPage = (props) => (
   <Layout>

@@ -1,12 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import "../fonts/fonts.css"
+
 const Form = () => (
     <>
         <form name="new-client" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
             <input className="field" name="firstName" placeholder="First Name" type="text" /><br/>
             <input className="field" name="lastName" placeholder="Last Name" type="text" /><br/>
-            <input className="field" name="email" placeholder="Your Email" type="text" /><br/>
+            <input className="field" name="email" placeholder="Your Email" type="email" /><br/>
             <input className="field" name="companyName" placeholder="Company Name" type="text" /><br/>
             <input className="field" name="regCountry" placeholder="Registration Country" type="text" /><br/>
             <input className="field" name="companyNumber" placeholder="Company Number" type="text" /><br/>
@@ -26,7 +28,8 @@ const Form = () => (
             <input className="field" name="outboundMonthlyVolume" placeholder="Monthly Volume" type="text" /><br/>
             <input className="field" name="outboundCurrencies" placeholder="Business Type" type="text" /><br/>
             <textarea className="field" name="anyFurtherInfo" placeholder="Any Additional Information"/><br/>
-            <Link style={{textDecoration: "none", color: "white"}} to="application-received"><button type="submit">Submit</button></Link>
+            <div data-netlify-recaptcha="true"></div>
+            <Link style={{textDecoration: "none", color: "white"}} to="application-received"><button type="submit" formMethod="POST">Submit</button></Link>
         </form>
     </>
 )
