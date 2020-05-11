@@ -15,7 +15,7 @@ const Apply = (props) => (
         </div>
         <div className="form-wrapper">
             <div className="contact-form">
-                <form name="new-client" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+                <form name="new-client" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
                     <input className="field" name="firstName" placeholder="First Name" type="text" /><br/>
                     <input className="field" name="lastName" placeholder="Last Name" type="text" /><br/>
                     <input className="field" name="email" placeholder="Your Email" type="text" /><br/>
@@ -38,7 +38,7 @@ const Apply = (props) => (
                     <input className="field" name="outboundMonthlyVolume" placeholder="Monthly Volume" type="text" /><br/>
                     <input className="field" name="outboundCurrencies" placeholder="Business Type" type="text" /><br/>
                     <textarea className="field" name="anyFurtherInfo" placeholder="Any Additional Information"/><br/>
-                    <Link to="application-received"><button>Submit</button></Link>
+                    <Link to="application-received"><button type="submit">Submit</button></Link>
                 </form>
             </div>
         </div>
