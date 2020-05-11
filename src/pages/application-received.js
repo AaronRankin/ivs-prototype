@@ -7,7 +7,7 @@ import "../styles/application-received.css"
 import Footer from "../components/footer"
 
 const ApplicationSubmitted = (props) => (
-    <div>
+    <>
         <div className="apply-logo">
             <Link to="/"><Img style={{
                 width: "20%"
@@ -27,7 +27,7 @@ const ApplicationSubmitted = (props) => (
 
 
         <Footer/>
-    </div>
+    </>
 )
 
 export default ApplicationSubmitted;

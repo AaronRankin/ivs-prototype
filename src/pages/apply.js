@@ -6,7 +6,7 @@ import "../styles/apply.css"
 import Footer from "../components/footer"
 
 const Apply = (props) => (
-    <div>
+    <>
         <div className="apply-logo">
             <Link to="/"><Img style={{
                 width: "20%"
@@ -44,7 +44,7 @@ const Apply = (props) => (
             </div>
         </div>
         <Footer/>
-    </div>
+    </>
 )
 
 export default Apply;
