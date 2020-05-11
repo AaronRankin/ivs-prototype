@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    margin: 0;
+    
+}
+
+form a {
+    text-decoration: none;
+}
+
+input {
+    all: unset;
+    background-color: white;
+    border: 1px solid rgb(169, 169, 169);
+    padding: 10px;
+    width: 50vw;
+
+}
+
+input [type=checkbox] {
+    width: 40px;
+    height: 20px;
+}
+
+.apply-logo {
+    padding: 20px;
+}
+
+.form-wrapper {
+    width: 100%;
+    background-color: #F8F8F8;
+}
+
+.contact-form {
+    max-width: 800px;
+    background-color: #F8F8F8;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.contact-form p {
+    margin-bottom: 0;
+}
+
+.contact-form input {
+    border-radius: 5px;
+    margin: 10px 0 10px 0;
+    
+}
+
+.contact-form span {
+    margin-right: 10px;
+}
+
+.contact-form textarea {
+    border-radius: 5px;
+    width: 50vw;
+    padding: 10px;
+    margin-top: 10px;
+    
+}
+
+button {
+    all: unset;
+    width: 100%;
+    color: white;
+    background-color: steelblue;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px 0 10px 0;
+
+}
+
+button:hover {
+    background-color: rgb(49, 103, 147);
+    transition: 300ms ease-in;
+
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: white;
+    border: 1px rgb(169, 169, 169) solid;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    height: 1.25rem;
+    margin-right: 0.25rem;
+    position: relative;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    vertical-align: middle;
+    width: 1.25rem;
+  }
+  input[type="checkbox"]::after {
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2264px%22%20height%3D%2264px%22%20viewBox%3D%220%200%2064%2064%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cpolygon%20id%3D%22Combined-Shape%22%20fill%3D%22white%22%20points%3D%2223%2056%2021%2054%200%2033%207%2026%2023%2042%2057%208%2064%2015%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 0.75rem 0.75rem;
+    content: "";
+    height: 1rem;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+    width: 1rem;
+  }
+  input[type="checkbox"]:hover {
+    background-color: #bfdde1;
+    border: 0.125rem steelblue solid;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  input[type="checkbox"]:focus {
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(0, 119, 136, 0.75);
+  }
+  input[type="checkbox"]:checked {
+    background-color: steelblue;
+    border: 0.125rem steelblue solid;
+  }
+  input[type="checkbox"]:checked::after {
+    opacity: 1;
+  }
+
+@media screen and (max-width: 450px) {
+    .contact-form{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    input {
+        width: 70vw;
+    }
+
+    .contact-form textarea {
+        width: 70vw;
+    }
+
+    .gatsby-image-wrapper {
+        width: 60%;
+    }
+}

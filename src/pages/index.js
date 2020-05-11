@@ -23,7 +23,11 @@ const IndexPage = (props) => (
     <meta name="twitter:creator" content="ivsgroup" />
     <title>IVS Group | The Future of eCommerce</title>
     </Helmet>
-    <BackgroundImage  fluid={props.data.backgroundImage.childImageSharp.fluid}>
+    <BackgroundImage
+    style={{
+      backgroundPosition: "center bottom"
+    }}
+    fluid={props.data.backgroundImage.childImageSharp.fluid}>
       <div className="front-page-text">
         <div>
           <p className="main-title"><span>IVS</span></p>
@@ -41,7 +45,7 @@ export default IndexPage;
 
 export const pageQuery = graphql`
   query {
-    backgroundImage: file(relativePath: {eq: "forest.jpg"}) {
+    backgroundImage: file(relativePath: {eq: "rainforest.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 2000) {
           ...GatsbyImageSharpFluid

@@ -637,7 +637,7 @@ pre tt:after {
 }
 
 :root {
-  --background: white;
+  --background: transpatent;
 }
 
 *, *::before, *::after {
