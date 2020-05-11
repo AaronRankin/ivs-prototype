@@ -42,8 +42,6 @@ const Apply = (props) => (
                 </form>
             </div>
         </div>
-
-
         <Footer/>
     </div>
 )

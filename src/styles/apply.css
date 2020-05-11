@@ -128,7 +128,7 @@ input[type="checkbox"] {
   }
   input[type="checkbox"]:focus {
     outline: none;
-    box-shadow: 0px 0px 8px rgba(0, 119, 136, 0.75);
+    box-shadow: 0px 0px 8px black;
   }
   input[type="checkbox"]:checked {
     background-color: steelblue;
@@ -142,6 +142,7 @@ input[type="checkbox"] {
     .contact-form{
         padding-left: 0;
         padding-right: 0;
+        height: 100vh;
     }
 
     input {
