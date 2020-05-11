@@ -1,7 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 import { Link, graphql } from "gatsby"
-import Helmet from "react-helmet"
+import { Helmet } from "react-helmet"
 
 import "../styles/apply.css"
 import Footer from "../components/footer"
