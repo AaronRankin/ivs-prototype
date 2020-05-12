@@ -90,7 +90,7 @@ const Form = () => (
                 <textarea className="field" name="anyFurtherInfo" id="anyFurtherInfo" placeholder="Any Additional Information" rows="6"/>
             </label>
             <br/>
-            <button type="submit">Submit</button>
+            <button style={{ color: "white" }}type="submit">Submit</button>
         </form>
     </>
 )
