@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
-import Img from "gatsby-image"
+import Img from "gatsby-image/withIEPolyfill"
 
 const Header = () => {
 
@@ -21,7 +21,7 @@ const Header = () => {
   return(
     <header id="header">
       <div className="logo">    
-        <Img className="inner-logo" fluid={data.file.childImageSharp.fluid} />
+        <Img objectFit="contain" className="inner-logo" fluid={data.file.childImageSharp.fluid} />
       </div>
     </header>
   );

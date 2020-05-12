@@ -33,7 +33,7 @@ const IndexPage = (props) => (
         <div>
           <p className="main-title"><span>IVS</span></p>
           <p className="main-title">GROUP</p>
-          <p><em>The next generation of business banking</em></p>
+          <p className="tag-line"><em>The next generation of business banking</em></p>
           <br/>
           <p><Link className="form-link" to="/apply"><span>Apply Now</span></Link></p>
         </div>
