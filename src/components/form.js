@@ -46,15 +46,15 @@ const Form = () => (
             <p>Inbound Funds</p>
             <span>B2B</span>
             <label htmlFor="inboundB2B">
-                <input type="checkbox" name="inboundB2B" id="inboundB2B" />
+                <input type="checkbox" name="inboundB2B" id="inboundB2B" value="Inbound B2B"/>
             </label>
             <span style={{paddingLeft: "5px"}}>B2C</span>
             <label htmlFor="inboundB2C">
-                <input type="checkbox" name="inboundB2C" id="inboundB2C" />
+                <input type="checkbox" name="inboundB2C" id="inboundB2C" value="Inbound B2C" />
             </label>
             <span style={{paddingLeft: "5px"}}>C2B</span>
             <label htmlFor="inboundC2B">
-                <input type="checkbox" name="inboundC2B" id="inboundC2B" />
+                <input type="checkbox" name="inboundC2B" id="inboundC2B" value="Inbound C2B" />
             </label>
             <br/>
             <label htmlFor="inboundMonthlyVolume">
@@ -67,15 +67,15 @@ const Form = () => (
             <p>Outboundbound Funds</p>
             <span>B2B</span>
             <label htmlFor="outboundB2B">
-                <input type="checkbox" name="outboundB2B" id="outboundB2B" />
+                <input type="checkbox" name="outboundB2B" id="outboundB2B" value="Outbound B2B" />
             </label>
             <span style={{paddingLeft: "5px"}}>B2C</span>
             <label htmlFor="outboundB2C">
-                <input type="checkbox" name="outboundB2C" id="outboundB2C" />
+                <input type="checkbox" name="outboundB2C" id="outboundB2C" value="Outbound B2C" />
             </label>
             <span style={{paddingLeft: "5px"}}>C2B</span>
             <label htmlFor="outboundC2B">
-                <input type="checkbox" name="outboundC2B" id="outboundC2B" />
+                <input type="checkbox" name="outboundC2B" id="outboundC2B" value="Outbound C2B" />
             </label>
             <br/>
             <label htmlFor="outboundMonthlyVolume">

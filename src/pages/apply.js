@@ -10,7 +10,7 @@ import Form from "../components/form"
 const Apply = (props) => (
     <>
         <Helmet>
-            <title>IVS Group | The Future of Business Banking</title>
+            <title>IVS Group | The Next Generation of Business Banking</title>
         </Helmet>
         <div className="apply-logo">
             <Link to="/"><Img style={{
