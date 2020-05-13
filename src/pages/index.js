@@ -15,12 +15,12 @@ const IndexPage = (props) => (
     <meta property="og:title" content="IVS Group - The Next Generation of Business Banking" />
     <meta property="og:url" content="https://ivs.group/" />
     <meta property="og:site_name" content="IVS Group" />
-    <meta property="og:image" content="/images/ivs-twitter-card.png" />
+    <meta property="og:image" content={`${props.data.site.siteMetadata.url}${props.data.twitterCard.publicURL}`} />
     <meta property="og:image:secure_url" content="https://ivs.group" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="IVS Group - The Next Generation of Business Banking" />
     <meta name="twitter:site" content="@ivsgroup" />
-    <meta name="twitter:image" content="images/ivs-twitter-card.png" />
+    <meta name="twitter:image" content={`${props.data.site.siteMetadata.url}${props.data.twitterCard.publicURL}`} />
     <meta name="twitter:creator" content="ivsgroup" />
     <title>IVS Group | The Next Generation of Business Banking</title>
     </Helmet>
@@ -53,5 +53,13 @@ export const pageQuery = graphql`
         }
       }
     }  
+    twitterCard: file(relativePath: {eq: "ivs-twitter-card.png"}) {
+      publicURL
+    }
+    site {
+      siteMetadata {
+        url
+      }
+    }
   }
 `;
