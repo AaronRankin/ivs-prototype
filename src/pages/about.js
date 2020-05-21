@@ -27,7 +27,8 @@ const About = ( { data } ) => (
         <Helmet>
             <title>About Us | IVS Group</title>
         </Helmet>
-        <Parallax bgImage={require("../images/jungle-long.jpg")} strength={1000} style={{ width: "100%", objectFit: "cover" }}>
+        <div style={{ width: "100%", transition: "500ms ease-in-out" }}></div>
+        <Parallax bgImage={require("../images/jungle-long.jpg")} strength={1000} style={{ width: "100%", objectFit: "contain" }}>
          <div className="about-top-banner-color-overlay">       
             <div className="about-top-banner">
                 <div className="about-title-box">

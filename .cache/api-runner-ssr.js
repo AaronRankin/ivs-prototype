@@ -7,6 +7,9 @@ var plugins = [{
     },{
       plugin: require('/Users/aaronrankin/Documents/GitHub/ivs-prototype/node_modules/gatsby-plugin-google-fonts/gatsby-ssr'),
       options: {"plugins":[],"fonts":["montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"],"display":"swap"},
+    },{
+      plugin: require('/Users/aaronrankin/Documents/GitHub/ivs-prototype/node_modules/gatsby-plugin-load-script/gatsby-ssr'),
+      options: {"plugins":[],"src":"src/scripts/header-hide.js"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

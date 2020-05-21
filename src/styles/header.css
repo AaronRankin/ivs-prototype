@@ -1,13 +1,22 @@
 .header {
     background-color: #fff;
-    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    /* box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); */
     position: fixed;
     width: 100%;
     z-index: 3;
     padding-top: 10px;
     padding-left: 3vw;
     padding-right: 20px;
-    
+    transform: translateY(0);
+   transition: transform 0.3s ease;
+}
+
+.header.shadow {
+    box-shadow: 0 9px 9px -9px rgba(0, 0, 0, 0.13);
+}
+  
+.header.hidden {
+    transform: translateY(-110%);
 }
   
 .menu {
@@ -159,3 +168,27 @@
         width: 200px;
     }
 }
+
+/* .headroom {
+    top: 0;
+    left: 0;
+    right: 0;
+    zIndex: 1;
+    
+}
+.headroom--unfixed {
+    position: relative;
+    transform: translateY(0);
+}
+.headroom--scrolled {
+    transition: transform 500ms ease-in-out;
+}
+.headroom--unpinned {
+    position: fixed;
+    transform: translateY(-100%);
+    
+}
+.headroom--pinned {
+    position: fixed;
+    transform: translateY(0%);
+} */
