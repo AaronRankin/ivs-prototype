@@ -1,0 +1,38 @@
+.landing-logo {
+    padding: 0;
+    width: 50vw;
+    
+}
+
+.front-header {
+    display: flex;
+    background: transparent;
+    text-align: center;
+    position: fixed;
+    z-index: 2000;
+    width: 100%;
+    font-weight: 600;
+    justify-content: center;
+    padding-top: 2vw;
+    
+}
+  
+.spacer {
+    width: 100%;
+    height: 70px;
+}
+
+@media screen and (min-width: 800px) {
+
+    .landing-logo {
+        width: 12vw;
+    }
+
+    .front-header {
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 8vw;
+    }
+
+}
+

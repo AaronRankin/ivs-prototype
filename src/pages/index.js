@@ -4,11 +4,12 @@ import BackgroundImage from "gatsby-background-image"
 import { Helmet } from "react-helmet"
 
 import Layout from "../components/layout"
+import FrontHeader from "../components/front-header"
 
 
 
 const IndexPage = (props) => (
-  <Layout>
+  <div>
     <Helmet>
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
@@ -29,6 +30,7 @@ const IndexPage = (props) => (
       backgroundPosition: "center bottom"
     }}
     fluid={props.data.backgroundImage.childImageSharp.fluid}>
+      <FrontHeader />
       <div className="front-page-text">
         <div>
           <p className="main-title"><span>IVS</span></p>
@@ -39,7 +41,7 @@ const IndexPage = (props) => (
         </div>
       </div>
     </BackgroundImage>
-  </Layout>
+  </div>
 )
 
 export default IndexPage;
