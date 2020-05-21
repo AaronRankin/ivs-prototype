@@ -27,7 +27,7 @@ const About = ( { data } ) => (
         <Helmet>
             <title>About Us | IVS Group</title>
         </Helmet>
-        <Parallax bgImage={require("../images/jungle-long.jpg")} strength={1000} bgImageStyle={{width: "100%", objectFit: "contain", objectPosition: "50% 30%"}}>
+        <Parallax bgImage={require("../images/jungle-long.jpg")} strength={1000} style={{ width: "100%", objectFit: "cover" }}>
          <div className="about-top-banner-color-overlay">       
             <div className="about-top-banner">
                 <div className="about-title-box">
@@ -36,7 +36,7 @@ const About = ( { data } ) => (
                 </div>
             </div>
          </div>
-         <Parallax /> 
+         </Parallax> 
          <div className="about-second-banner-color-overlay">  
             <div className="about-second-banner">
                 <h3>Establishing banking facilties can be a nightmare for online businesses.</h3>
@@ -44,7 +44,7 @@ const About = ( { data } ) => (
                 <p>Through our portfolio of partners we can pair you with a provider most suited to meet your needs</p>
             </div>
          </div> 
-         <Parallax bgImage={require("../images/jungle-long.jpg")} strength={1000} bgImageStyle={{width: "100%", objectFit: "contain", objectPosition: "50% 30%"}}></Parallax> 
+         <Parallax bgImage={require("../images/jungle-long-3.jpg")} strength={1000} style={{ objectFit: "cover" }}>
          <div className="about-third-banner-color-overlay"> 
             <div className="about-third-banner">
                 <h3>Business Bank Accounts</h3>
@@ -53,7 +53,7 @@ const About = ( { data } ) => (
                 <p>At IVS Group we have successfully opened accounts for clients in a wide variety of sectors such as Gaming, Forex, Crypto Currency Exchanges and Online Casinos.</p>
             </div>
          </div> 
-         <Parallax />  
+         </Parallax>  
          <div className="about-account-features-color-overlay">
             <h1 style={{ marginBottom: 40 }}>All our accounts feature...</h1>
             <div className="about-account-features">
@@ -94,7 +94,7 @@ const About = ( { data } ) => (
                 </div>
             </div>
          </div>  
-         <Parallax bgImage={require("../images/jungle-long.jpg")} strength={1000} bgImageStyle={{width: "100%", objectFit: "contain", objectPosition: "50% 30%"}}></Parallax> 
+         <Parallax bgImage={require("../images/jungle-2.jpg")} strength={1000} bgImageStyle={{width: "100%", objectFit: "cover", objectPosition: "center top" }}>
          <div className="about-co-highlights-color-overlay"> 
             <h2 style={{ marginBottom: 50 }}>
                 <span
@@ -114,7 +114,7 @@ const About = ( { data } ) => (
                 </div>
             </div>
          </div> 
-         <Parallax />
+        
          <div className="about-get-started-color-overlay">
             <div className="about-get-started">
                 <h2>To Get Started</h2>
@@ -136,7 +136,6 @@ const About = ( { data } ) => (
             </div> 
          </div>
         </Parallax>
-
     </Layout>
 );
 
