@@ -27,7 +27,7 @@ const About = ( { data } ) => (
         <Helmet>
             <title>About Us | IVS Group</title>
         </Helmet>
-        <Parallax bgImage={require("../images/jungle-long.jpg")} strength={1000} bgImageStyle={{width: "100%", objectFit: "cover", objectPosition: "center bottom", marginTop: "20vw"}}>
+        <Parallax bgImage={require("../images/jungle-long.jpg")} strength={1000} bgImageStyle={{width: "100%", objectFit: "contain", objectPosition: "50% 30%"}}>
          <div className="about-top-banner-color-overlay">       
             <div className="about-top-banner">
                 <div className="about-title-box">
@@ -35,14 +35,16 @@ const About = ( { data } ) => (
                     <h2 style={{ fontStyle: "italic", marginBottom: 0 }}>for the ecommerce world</h2>
                 </div>
             </div>
-         </div> 
+         </div>
+         <Parallax /> 
          <div className="about-second-banner-color-overlay">  
             <div className="about-second-banner">
                 <h3>Establishing banking facilties can be a nightmare for online businesses.</h3>
                 <p>IVS Group's growing network has already enabled a variety of online businesses to easily gain access to financial services.</p>
                 <p>Through our portfolio of partners we can pair you with a provider most suited to meet your needs</p>
             </div>
-         </div>  
+         </div> 
+         <Parallax bgImage={require("../images/jungle-long.jpg")} strength={1000} bgImageStyle={{width: "100%", objectFit: "contain", objectPosition: "50% 30%"}}></Parallax> 
          <div className="about-third-banner-color-overlay"> 
             <div className="about-third-banner">
                 <h3>Business Bank Accounts</h3>
@@ -50,7 +52,8 @@ const About = ( { data } ) => (
                 <p>Non-resident directors and/or UBOs, international B2C & C2B payments and high risk sectors/geographies, are just a few issues that can cause a bank to reject or close an account.</p>
                 <p>At IVS Group we have successfully opened accounts for clients in a wide variety of sectors such as Gaming, Forex, Crypto Currency Exchanges and Online Casinos.</p>
             </div>
-         </div>   
+         </div> 
+         <Parallax />  
          <div className="about-account-features-color-overlay">
             <h1 style={{ marginBottom: 40 }}>All our accounts feature...</h1>
             <div className="about-account-features">
@@ -91,6 +94,7 @@ const About = ( { data } ) => (
                 </div>
             </div>
          </div>  
+         <Parallax bgImage={require("../images/jungle-long.jpg")} strength={1000} bgImageStyle={{width: "100%", objectFit: "contain", objectPosition: "50% 30%"}}></Parallax> 
          <div className="about-co-highlights-color-overlay"> 
             <h2 style={{ marginBottom: 50 }}>
                 <span
@@ -110,6 +114,7 @@ const About = ( { data } ) => (
                 </div>
             </div>
          </div> 
+         <Parallax />
          <div className="about-get-started-color-overlay">
             <div className="about-get-started">
                 <h2>To Get Started</h2>
