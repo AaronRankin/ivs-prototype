@@ -28,7 +28,7 @@ const About = ( { data } ) => (
             <title>About Us | IVS Group</title>
         </Helmet>
         <div style={{ width: "100%", transition: "500ms ease-in-out" }}></div>
-        <Parallax bgImage={require("../images/jungle-long.jpg")} strength={1000} style={{ width: "100%", objectFit: "contain" }}>
+        <Parallax bgImage={data.jungleOne.childImageSharp.fluid.originalImg} strength={1000} style={{ width: "100%", objectFit: "contain" }}>
          <div className="about-top-banner-color-overlay">       
             <div className="about-top-banner">
                 <div className="about-title-box">
@@ -45,7 +45,7 @@ const About = ( { data } ) => (
                 <p>Through our portfolio of partners we can pair you with a provider most suited to meet your needs</p>
             </div>
          </div> 
-         <Parallax bgImage={require("../images/jungle-long-3.jpg")} strength={1000} style={{ objectFit: "cover" }}>
+         <Parallax bgImage={data.jungleTwo.childImageSharp.fluid.originalImg} strength={1000} style={{ objectFit: "cover" }}>
          <div className="about-third-banner-color-overlay"> 
             <div className="about-third-banner">
                 <h3>Business Bank Accounts</h3>
@@ -95,7 +95,7 @@ const About = ( { data } ) => (
                 </div>
             </div>
          </div>  
-         <Parallax bgImage={require("../images/jungle-2.jpg")} strength={1000} bgImageStyle={{width: "100%", objectFit: "cover", objectPosition: "center top" }}>
+         <Parallax bgImage={data.jungleThree.childImageSharp.fluid.originalImg} strength={1000} bgImageStyle={{width: "100%", objectFit: "cover", objectPosition: "center top" }}>
          <div className="about-co-highlights-color-overlay"> 
             <h2 style={{ marginBottom: 50 }}>
                 <span
@@ -145,11 +145,27 @@ export default About;
 
 export const pageQuery = graphql`
     query {
-        file(relativePath: {eq: "jungle-long.jpg"}) {
+        jungleOne: file(relativePath: {eq: "jungle-long.jpg"}) {
             id
             childImageSharp {
                 fluid(maxWidth: 2000) {
-                    ...GatsbyImageSharpFluid
+                    originalImg
+                }
+            }
+        }
+        jungleTwo: file(relativePath: {eq: "jungle-long-3.jpg"}) {
+            id
+            childImageSharp {
+                fluid(maxWidth: 2000) {
+                    originalImg
+                }
+            }
+        }
+        jungleThree: file(relativePath: {eq: "jungle-2.jpg"}) {
+            id
+            childImageSharp {
+                fluid(maxWidth: 2000) {
+                    originalImg
                 }
             }
         }
