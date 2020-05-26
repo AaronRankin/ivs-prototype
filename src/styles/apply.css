@@ -165,7 +165,5 @@ input[type="checkbox"]:checked::after {
         width: 75vw !important;
     }
 
-    .gatsby-image-wrapper {
-        width: 60%;
-    }
+    
 }

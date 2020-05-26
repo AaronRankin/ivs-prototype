@@ -7,20 +7,21 @@ import "../styles/apply.css"
 import Footer from "../components/footer"
 import Form from "../components/form"
 import Header from "../components/header"
+import Layout from "../components/layout"
 
 const Apply = (props) => (
-    <>
+    <Layout>
         <Helmet>
             <title>IVS Group | The Next Generation of Business Banking</title>
         </Helmet>
-        <Header />
+        {/* <Header /> */}
         <div className="form-wrapper">
             <div className="contact-form">
                 <Form/>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
-    </>
+    </Layout>
 )
 
 export default Apply;
