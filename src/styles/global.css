@@ -6,13 +6,28 @@
 */
 
 html, body, #___gatsby {
-    height: 100%;
+    height: 100% !important;
+    
+}
+
+html {
+    height: 100% !important;
+}
+
+body {
+    height: 100% !important;
+}
+
+#gatsby-focus-wrapper {
+    height: 100% !important;
 }
 
 body {
     margin: 0px;
+    height: 100% !important;
 }
 
 div[role="group"][tabindex] {
-    height: 100%;
+    height: 100% !important;
+    
 }

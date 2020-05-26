@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 
 const Form = () => (
-    <>
+    <div style={{ height: "100%" }}>
         <form name="new-client" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/application-received">
             <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="new-client" />
@@ -87,12 +87,12 @@ const Form = () => (
             </label>
             <br/>
             <label htmlFor="anyFurtherInfo">
-                <textarea className="field" name="anyFurtherInfo" id="anyFurtherInfo" placeholder="Any Additional Information" rows="6"/>
+                <textarea className="field extra-info" name="anyFurtherInfo" id="anyFurtherInfo" placeholder="Any Additional Information" rows="6"/>
             </label>
             <br/>
             <button style={{ color: "white" }}type="submit">Submit</button>
         </form>
-    </>
+    </div>
 )
 
 export default Form;

@@ -6,18 +6,14 @@ import { Helmet } from "react-helmet"
 import "../styles/apply.css"
 import Footer from "../components/footer"
 import Form from "../components/form"
+import Header from "../components/header"
 
 const Apply = (props) => (
     <>
         <Helmet>
             <title>IVS Group | The Next Generation of Business Banking</title>
         </Helmet>
-        <div className="apply-logo">
-            <Link to="/"><Img style={{
-                width: "20%"
-            }}
-                fluid={props.data.logo.childImageSharp.fluid} /></Link>
-        </div>
+        <Header />
         <div className="form-wrapper">
             <div className="contact-form">
                 <Form/>
