@@ -4,6 +4,7 @@ import { Parallax, Background } from 'react-parallax'
 import Img from 'gatsby-image'
 import { graphql, Link } from 'gatsby'
 import { Helmet } from "react-helmet"
+import styled from "styled-components"
 
 import { MdVpnLock } from "react-icons/md"
 import { GoCreditCard } from "react-icons/go"
@@ -18,6 +19,7 @@ import { GrNodes } from "react-icons/gr"
 import { MdPhonelinkLock } from "react-icons/md"
 import { MdDevices } from "react-icons/md"
 import { TiArrowDownThick } from "react-icons/ti"
+import { AiOutlineBank } from "react-icons/ai"
 
 import "../components/layout.css"
 import "../styles/about.css"
@@ -28,35 +30,43 @@ const About = ( { data } ) => (
             <title>About Us | IVS Group</title>
         </Helmet>
         <div style={{ width: "100%", transition: "500ms ease-in-out" }}></div>
-        <Parallax bgImage={data.jungleOne.childImageSharp.fluid.originalImg} strength={1000} style={{ width: "100%", objectFit: "contain" }}>
+        <Parallax bgImage={data.jungleOne.childImageSharp.fluid.originalImg} strength={1000} bgClassName="bg-one">
          <div className="about-top-banner-color-overlay">       
             <div className="about-top-banner">
                 <div className="about-title-box">
-                    <h1>Bespoke Banking Solutions</h1>
-                    <h2 style={{ fontStyle: "italic", marginBottom: 0 }}>for the ecommerce world</h2>
+                    <h2 className="top-title">We Will Find You</h2>
+                    <h1 className="lower-title">A Corporate Bank Account</h1>
                 </div>
             </div>
          </div>
          </Parallax> 
          <div className="about-second-banner-color-overlay">  
             <div className="about-second-banner">
-                <h3>Establishing banking facilties can be a nightmare for online businesses.</h3>
-                <p>IVS Group's growing network has already enabled a variety of online businesses to easily gain access to financial services.</p>
-                <p>Through our portfolio of partners we can pair you with a provider most suited to meet your needs</p>
+                <div className="about-second-banner-button">
+                    <h2 className="top-button-title">To get started</h2>
+                    <LinkButton to="/apply">Apply Today</LinkButton>
+
+                </div>
+                <div className="about-second-banner-blurb">
+                    <p className="top-text">IVS Group's growing network has already enabled a variety of online businesses to easily gain access to financial services.</p>
+                    <p className="top-text" style={{marginBottom: "0px"}}>Through our portfolio of partners we can pair you with a provider most suited to meet your needs.</p>
+                </div>
             </div>
          </div> 
-         <Parallax bgImage={data.jungleTwo.childImageSharp.fluid.originalImg} strength={1000} style={{ objectFit: "cover" }}>
          <div className="about-third-banner-color-overlay"> 
             <div className="about-third-banner">
-                <h3>Business Bank Accounts</h3>
-                <p>We understand the challenges online businesses face when opening a bank account.</p>
-                <p>Non-resident directors and/or UBOs, international B2C & C2B payments and high risk sectors/geographies, are just a few issues that can cause a bank to reject or close an account.</p>
-                <p>At IVS Group we have successfully opened accounts for clients in a wide variety of sectors such as Gaming, Forex, Crypto Currency Exchanges and Online Casinos.</p>
+                <div className="about-third-banner-title">
+                    <h2 className="about-third-banner-title-text">Business Bank Accounts</h2>
+                </div>
+                <div className="about-third-banner-blurb">
+                    <p className="about-third-banner-blurb-text">We understand the challenges online business face when opening a bank account.</p>
+                    <p className="about-third-banner-blurb-text">Non-resident directors and/or UBO’s international B2C&C2B payments and high risk sectors/geographies, are just a few issues that can cause a bank reject or close an account.</p>
+                    <p className="about-third-banner-blurb-text" style={{marginBottom: "0px"}}>At IVS Group we have successfully opened accounts for clients in a wide variety of sectors such as Gaming, Forex, Crypto Currency Exchanges and Online Casinos.</p>
+                </div>
             </div>
          </div> 
-         </Parallax>  
          <div className="about-account-features-color-overlay">
-            <h1 style={{ marginBottom: 40 }}>All our accounts feature...</h1>
+            <h1 style={{ marginBottom: 40 }}>Our Offering</h1>
             <div className="about-account-features">
                 
                 <div className="about-icons">
@@ -95,48 +105,86 @@ const About = ( { data } ) => (
                 </div>
             </div>
          </div>  
-         <Parallax bgImage={data.jungleThree.childImageSharp.fluid.originalImg} strength={1000} bgImageStyle={{width: "100%", objectFit: "cover", objectPosition: "center top" }}>
+         <Parallax bgImage={data.jungleTwo.childImageSharp.fluid.originalImg} strength={1000} bgImageStyle={{ objectFit: "cover", objectPosition: "center bottom"}}>
          <div className="about-co-highlights-color-overlay"> 
-            <h2 style={{ marginBottom: 50 }}>
-                <span
-                style={{ backgroundColor: "#f5ed12", paddingTop: 10, paddingBottom: 10, paddingLeft: 20, paddingRight: 20, color: "#00AEEF" }}
-                >IVS Group has:</span></h2>
+            <div className="highlight-title">
+                <h2 style={{ marginBottom: 0 }}>IVS Group has:</h2>
+            </div>
             <div className="about-co-highlights" >
                 <div className="about-co-highlights-list">
-                    <div className="about-co-highlight-examples highlight-one">
+                    <div className="about-co-highlight-examples highlight-one" style={{gridArea: "a"}}>
+                        <AiOutlineBank className="bank-icon" style={{marginTop: "0"}}/>
+                    </div>
+                    <div className="about-co-highlight-examples highlight-two" style={{gridArea: "b"}}>
+                        <AiOutlineBank className="bank-icon" />
+                    </div>
+                    <div className="about-co-highlight-examples highlight-three" style={{gridArea: "c"}}>
+                        <AiOutlineBank className="bank-icon" />
+                    </div>
+                    <div className="about-co-highlight-examples highlight-one" style={{gridArea: "d"}}>
                         <p style={{ marginBottom: 0 }}>Relationships with over 35 UK & EU banks</p>
                     </div>
-                    <div className="about-co-highlight-examples highlight-two">
+                    <div className="about-co-highlight-examples highlight-two" style={{gridArea: "e"}}>
                         <p style={{ marginBottom: 0 }}>Clients with monthly revenue & settlements exceeding $100m/month</p>
                     </div>
-                    <div className="about-co-highlight-examples highlight-three">
+                    
+                    <div className="about-co-highlight-examples highlight-three" style={{gridArea: "f"}}>
                         <p style={{ marginBottom: 0 }}>An account opening success rate in excess of 85%</p>
                     </div>
                 </div>
             </div>
          </div> 
-        
+         </Parallax>
          <div className="about-get-started-color-overlay">
             <div className="about-get-started">
-                <h2>To Get Started</h2>
+            <div className="highlight-title">
+                <h2 style={{ marginBottom: 0 }}>To Get Started:</h2>
+            </div>
                 <div className="about-get-started-process">
-                    <div className="about-get-started-steps" style={{ marginBottom: 10 }}>
-                        <p style={{ marginBottom: 0 }}>Get in touch with our dedicated team to discuss your banking needs.</p>
+                    <div className="get-started-step">
+                        <div className="step-number">
+                            <h1 className="step-number-text">1</h1>
+                            <div className="step-image-holder">
+                                <Img fluid={data.toucanStepOne.childImageSharp.fluid}/>
+                            </div>
+                        </div>
+                        <p className="step-text">Get in touch with our desicated team to discuss your banking needs</p>
                     </div>
-                    <TiArrowDownThick className="about-get-started-arrow" />
-                    <div className="about-get-started-steps" style={{ marginBottom: 10, marginTop: 10 }} >
-                        <p style={{ marginBottom: 0 }}>Complete the KYC & due diligence documentation.</p>
+                    <div className="get-started-step">
+                        <div className="step-number">
+                            <h1 className="step-number-text">2</h1>
+                            <div className="step-image-holder">
+                                <Img fluid={data.toucanStepTwo.childImageSharp.fluid}/>
+                            </div>
+                        </div>
+                        <p className="step-text">Complete the KYC & due diligence documentation</p>
                     </div>
-                    <TiArrowDownThick className="about-get-started-arrow"/>
-                    <div className="about-get-started-steps" style={{ marginBottom: 10, marginTop: 10 }}>
-                        <p style={{ marginBottom: 0 }}>Receive you online account access</p>
+                    <div className="get-started-step">
+                        <div className="step-number">
+                            <h1 className="step-number-text">3</h1>
+                            <div className="step-image-holder">
+                                <Img fluid={data.toucanStepThree.childImageSharp.fluid}/>
+                            </div>
+                        </div>
+                        <p className="step-text">Receive you online account access</p>
                     </div>
-                    <TiArrowDownThick className="about-get-started-arrow" style={{ marginBottom: 10 }}/>
                 </div>
-                <Link className="about-contact-link" to="/apply"><span className="about-contact-btn">Apply Today</span></Link>
             </div> 
          </div>
-        </Parallax>
+         <Parallax bgImage={data.jungleTwo.childImageSharp.fluid.originalImg} strength={1000} bgImageStyle={{ objectFit: "cover", objectPosition: "center bottom"}}>
+         <div className="about-bottom-section">
+             <div className="apply-section">
+                <div className="apply-tagline">
+                    <h1 className="apply-tagline-text">Find The Right Banking Solution For Your Business</h1>
+                </div>
+                <div className="apply-button">
+                    <ApplyButton>Apply Now</ApplyButton>
+                </div>
+             </div>
+         </div>    
+         </Parallax>
+
+        
     </Layout>
 );
 
@@ -145,7 +193,7 @@ export default About;
 
 export const pageQuery = graphql`
     query {
-        jungleOne: file(relativePath: {eq: "jungle-long.jpg"}) {
+        jungleOne: file(relativePath: {eq: "rainforest.jpg"}) {
             id
             childImageSharp {
                 fluid(maxWidth: 2000) {
@@ -153,7 +201,7 @@ export const pageQuery = graphql`
                 }
             }
         }
-        jungleTwo: file(relativePath: {eq: "jungle-long-3.jpg"}) {
+        jungleTwo: file(relativePath: {eq: "forest-closer.jpg"}) {
             id
             childImageSharp {
                 fluid(maxWidth: 2000) {
@@ -161,13 +209,65 @@ export const pageQuery = graphql`
                 }
             }
         }
-        jungleThree: file(relativePath: {eq: "jungle-2.jpg"}) {
+        toucanStepOne: file(relativePath: {eq: "toucan-step-1.png"}) {
             id
             childImageSharp {
                 fluid(maxWidth: 2000) {
-                    originalImg
+                    ...GatsbyImageSharpFluid
                 }
             }
         }
+        toucanStepTwo: file(relativePath: {eq: "toucan-step-2.png"}) {
+            id
+            childImageSharp {
+                fluid(maxWidth: 2000) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        toucanStepThree: file(relativePath: {eq: "toucan-step-3.png"}) {
+            id
+            childImageSharp {
+                fluid(maxWidth: 2000) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+    }
+`
+
+const LinkButton = styled(Link)`
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    background-color: #f5ed12;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-size: 20px;
+
+    &:hover{
+        color: white;
+        background-color: black;
+        transition: 400ms ease-in-out;
+    }
+`
+
+const ApplyButton = styled(Link)`
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    background-color: #f5ed12;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    align-self: center;
+    justify-self: center;
+
+    border: 3px solid #f5ed12;
+
+    &:hover{
+        color: black;
+        box-shadow: 0px 0px 0px 5px rgba(245, 237, 18, .4);
+        transition: all 400ms ease-in-out;
     }
 `
