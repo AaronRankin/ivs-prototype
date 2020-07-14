@@ -12,7 +12,7 @@ import Layout from "../components/layout"
 const Apply = (props) => (
     <>
         <Helmet>
-            <title>IVS Group | The Next Generation of Business Banking</title>
+            <title>Apply Now  |  IVS Group</title>
         </Helmet>
         <Header />
         <div className="form-wrapper">
