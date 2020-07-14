@@ -37,7 +37,7 @@ const IndexPage = (props) => (
           <p className="main-title">GROUP</p>
           <p className="tag-line"><em>The next generation of business banking</em></p>
           <br/>
-          <p><Link className="form-link" to="/apply"><span>Apply Now</span></Link></p>
+          <p><Link className="form-link" to="/about"><span>Apply Now</span></Link></p>
         </div>
       </div>
     </BackgroundImage>
