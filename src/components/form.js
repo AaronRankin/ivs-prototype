@@ -64,7 +64,7 @@ const Form = () => (
             <label htmlFor="inboundCurrencies">
                 <input className="field" name="inboundCurrencies" id="inboundCurrencies" placeholder="Business Type" type="text" />
             </label><br/>
-            <p>Outboundbound Funds</p>
+            <p>Outbound Funds</p>
             <span>B2B</span>
             <label htmlFor="outboundB2B">
                 <input type="checkbox" name="outboundB2B" id="outboundB2B" value="Outbound B2B" />
