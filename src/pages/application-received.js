@@ -5,19 +5,20 @@ import BackgroundImage from "gatsby-background-image"
 import { Helmet } from "react-helmet"
 
 import "../styles/application-received.css"
-import Footer from "../components/footer"
+import Layut from "../components/layout"
+import Layout from "../components/layout"
 
 const ApplicationSubmitted = (props) => (
-    <>
+    <Layout>
         <Helmet>
             <title>Thank You | IVS Group</title>
         </Helmet>
-        <div className="apply-logo">
+        {/* <div className="apply-logo">
             <Link to="/"><Img style={{
                 width: "20%"
             }}
                 fluid={props.data.logo.childImageSharp.fluid} /></Link>
-        </div>
+        </div> */}
         <BackgroundImage style={{height: "100vh"}} fluid={props.data.forest.childImageSharp.fluid}>
             <div className="wrapper">
                 <div className="thank-you">
@@ -30,8 +31,8 @@ const ApplicationSubmitted = (props) => (
         </BackgroundImage>
 
 
-        <Footer/>
-    </>
+        {/* <Footer/> */}
+    </Layout>
 )
 
 export default ApplicationSubmitted;
